@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  elixir:
+    image: elixir:1.18
+    container_name: elixir-dev
+    tty: true
+    stdin_open: true
+    working_dir: /workspace
+    volumes:
+      - ..:/workspace
